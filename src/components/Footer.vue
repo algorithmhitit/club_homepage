@@ -26,7 +26,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #42b983;
   color: white;
   text-align: center;
 }
