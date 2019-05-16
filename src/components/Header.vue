@@ -3,10 +3,10 @@
         <img src="../assets/hitit_logo.png">
         <nav class="navbar">
             <ul>
-                <li><a v-bind:href="host">소개</a></li>
-                <li><a v-bind:href="host">공지사항</a></li>
-                <li><a v-bind:href="host">게시판</a></li>
-                <li><a v-bind:href="host">사진첩</a></li>
+                <li><router-link to='./introduce'>소개</router-link></li>
+                <li><router-link to="./notice">공지사항</router-link></li>
+                <li><router-link v-bind:to="{ name: 'board-page'}">게시판</router-link></li>
+                <li><router-link to='./picture'>사진첩</router-link></li>
             </ul>
         </nav>
     </header>

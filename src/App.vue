@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Header/>
-    <mainpage msg="HITIT"/>
+    <!--router 설정-->
+    <router-view></router-view>
     <Footer msg="footer"/>
   </div>
 </template>
@@ -10,13 +11,15 @@
 import Mainpage from './components/Mainpage.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Notice from './components/Notice.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
     Mainpage,
-    Footer
+    Footer,
+    Notice
   },
   data() {
     return {
