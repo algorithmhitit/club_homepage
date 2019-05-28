@@ -1,13 +1,21 @@
 <template>
-    <header>
-        <img src="../assets/hitit_logo.png">
-        <nav class="navbar">
+    <header >
+        
+        <nav class="navbar">            
             <ul>
+                <li>
+                  <router-link to ='./introduce'> 
+                 <img src="../assets/hitit_logo.png"  height="100" >
+                 <font size="100" >Hitit</font>
+                  </router-link> 
+                </li>
+
                 <li><router-link to='./introduce'>소개</router-link></li>
                 <li><router-link to="./notice">공지사항</router-link></li>
                 <li><router-link v-bind:to="{ name: 'board-page'}">게시판</router-link></li>
                 <li><router-link to='./picture'>사진첩</router-link></li>
             </ul>
+
         </nav>
     </header>
 </template>

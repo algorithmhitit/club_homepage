@@ -22,10 +22,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    position:fixed;
+    bottom : 0;
+  width:100%;
   background-color: #42b983;
   color: white;
   text-align: center;
