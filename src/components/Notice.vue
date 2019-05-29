@@ -4,26 +4,24 @@
 <template>
     <div>
         <h1>공지사항</h1>
-        <h1>Contact Management</h1>
-        <div id='vueapp'>
+        <div id="postlist">
 
             <table border='1' width='100%' style='border-collapse: collapse;'>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>City</th>
-                <th>Job</th>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회</th>
+                    <th>날짜</th>
+                </tr>
 
-            </tr>
-
-            <!--<tr v-for='contact in contacts'>
-                <td>{{ contact.name }}</td>
-                <td>{{ contact.email }}</td>
-                <td>{{ contact.country }}</td>
-                <td>{{ contact.city }}</td>
-                <td>{{ contact.job }}</td>
-            </tr>-->
+                <tr v-for="(content,index) in contents">
+                    <td>{{content.index }}</td>
+                    <td>{{content.title }}</td>
+                    <td>{{content.author }}</td>
+                    <td>{{content.views }}</td>
+                    <td>{{content.date }}</td>
+                </tr>
             </table>
         </div>
     </div>
@@ -31,34 +29,21 @@
 
 <!--vue script 파일-->
 <script>
-export default {
-    name : "Notice"
-}
-/*
-var app = new Vue({
-  el: '#vueapp',
-  data: {
-      name: '',
-      email: '',
-      country: '',
-      city: '',
-      job: '',
-      contacts: []
-  },
-  mounted: function () {
-    console.log('Hello from Vue!')
-    this.getContacts()
-  },
+//import Vue from 'vue'
 
-  methods: {
-    getContacts: function(){
-    },
-    createContact: function(){
-    },
-    resetForm: function(){
+export default {
+    name : "Notice",
+    data() {
+        return {contents:[
+            {index: 1, title: 'test1', author: 'James', views: 10, date: '2019-05-29'},
+            {index: 2, title: 'test2', author: 'Poter', views: 10, date: '2019-05-29'},
+            {index: 4, title: 'test4', author: 'Poter', views: 10, date: '2019-05-29'},
+            {index: 5, title: 'test5', author: 'Poter', views: 10, date: '2019-05-29'},
+            {index: 3, title: 'test3', author: 'Mike', views: 10, date: '2019-05-29'}
+        ]};
     }
-  }
-})*/ 
+};
+
 </script>
 
 <!--공지사항 style code-->

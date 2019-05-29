@@ -20,11 +20,6 @@ export default {
     Mainpage,
     Footer,
     Notice
-  },
-  data() {
-    return {
-      host: "http:localhost:8080"
-    }
   }
 }
 </script>
