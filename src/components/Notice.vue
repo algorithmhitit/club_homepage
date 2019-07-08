@@ -15,7 +15,7 @@
                     <th>날짜</th>
                 </tr>
 
-                <tr v-for="(content,index) in contents">
+                <tr v-for="content in contents" v-bind:key = "content.id">
                     <td>{{content.index }}</td>
                     <td>{{content.title }}</td>
                     <td>{{content.author }}</td>
