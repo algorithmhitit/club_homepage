@@ -24,6 +24,7 @@
                 </tr>
             </table>
         </div>
+        <button><router-link to="./wirte">글쓰기</router-link></button>
     </div>
 </template>
 

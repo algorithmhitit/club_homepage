@@ -1,22 +1,22 @@
 <template>
-    <header >
-        
-        <nav class="navbar">            
-            <ul>
-                <li>
-                  <router-link to ='./introduce'> 
-                 <img src="../assets/hitit_logo.png"  height="100" >
-                 <font size="100" >Hitit</font>
-                  </router-link> 
-                </li>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">            
+          <ul>
+              <li>
+                <router-link to ='./introduce'> 
+              <!--<img src="../assets/hitit_logo.png"  height="100" >-->
+              <font size="100" >Hitit</font>
+                </router-link> 
+              </li>
 
-                <li><router-link to='./introduce'>소개</router-link></li>
-                <li><router-link to="./notice">공지사항</router-link></li>
-                <li><router-link v-bind:to="{ name: 'board-page'}">게시판</router-link></li>
-                <li><router-link to='./picture'>사진첩</router-link></li>
-            </ul>
-
+              <li><router-link to='./introduce'>소개</router-link></li>
+              <li><router-link to="./notice">공지사항</router-link></li>
+              <li><router-link to="./board-page">게시판</router-link></li>
+              <li><router-link to='./picture'>사진첩</router-link></li>
+          </ul>
         </nav>
+      </div>
     </header>
 </template>
 
@@ -56,7 +56,7 @@ header {
   top:0;
   right:0;
   text-align: center;
-  background: #42b983;
+  background: black;
   color: white;
   font-size: 30px;
 }
