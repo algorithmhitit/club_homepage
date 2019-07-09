@@ -1,22 +1,20 @@
 <template>
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">            
-          <ul>
-              <li>
-                <router-link to ='./introduce'> 
-              <!--<img src="../assets/hitit_logo.png"  height="100" >-->
-              <font size="100" >Hitit</font>
-                </router-link> 
-              </li>
+      <nav class="navbar navbar-expand-lg navbar-dark pink scrolling-navbar">         
+        <!--<img src="../assets/hitit_logo.png"  height="100">-->
+        <ul class="mr-auto navbar-nav">
+            <li class="nav-item active">
+              <router-link to ='./introduce'>
+                <font size="100" >Hitit</font>
+              </router-link> 
+            </li>
 
-              <li><router-link to='./introduce'>소개</router-link></li>
-              <li><router-link to="./notice">공지사항</router-link></li>
-              <li><router-link to="./board-page">게시판</router-link></li>
-              <li><router-link to='./picture'>사진첩</router-link></li>
-          </ul>
-        </nav>
-      </div>
+            <li class="nav-item"><router-link to='./introduce'>소개</router-link></li>
+            <li class="nav-item"><router-link to="./notice">공지사항</router-link></li>
+            <li class="nav-item"><router-link to="./board-page">게시판</router-link></li>
+            <li class="nav-item"><router-link to='./picture'>사진첩</router-link></li>
+        </ul>
+      </nav>
     </header>
 </template>
 
@@ -35,9 +33,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   header {
-    background : greenyellow;
-    color: white;
-  };
+        background : greenyellow;
+        color: white;
+    };
 </style>

@@ -1,8 +1,17 @@
 <template>
-    <div>
-        <p>wirte page router test 중입니다.</p>
-        <vue-editor v-model="content"></vue-editor>
-    </div>
+    <form>
+        <div>
+            <!--제목 input 필요-->
+            <div class="form-group">
+                <label for="inputTitle">제목</label>
+                <input type="text" class="form-control" id="inputTitle" aria-describedby="emailHelp" placeholder="제목을 작성하여 주세요">
+            </div>
+
+            <vue-editor v-model="content"></vue-editor>
+            <button type="button" class="btn btn-primary">게시하기</button>
+            <button type="button" class="btn btn-danger">취소</button>
+        </div>
+    </form>
 </template>
 
 <script>
