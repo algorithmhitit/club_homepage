@@ -27,3 +27,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 참고 사이트
+```
+https://github.com/davidroyer/vue2-editor
+```
