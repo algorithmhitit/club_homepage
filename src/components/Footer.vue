@@ -1,8 +1,10 @@
 <template>
-    <footer>
-        <p>동아리 위치 : {{club_location}}</p>
-        <p>동아리 회장 : {{club_president}}</p>
-        <p>전화번호 : {{club_contact}}</p>
+    <footer class="bd-masthead-followup row m-0 border border-white">
+        <div class ="container-fluid p-3 p-md-5">
+            <p>동아리 위치 : {{club_location}}</p>
+            <p>동아리 회장 : {{club_president}}</p>
+            <p>전화번호 : {{club_contact}}</p>
+        </div>
     </footer>
 </template>
 
@@ -21,12 +23,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-footer {
-    position:fixed;
-    bottom : 0;
-  width:100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
+    footer {
+        background : greenyellow;
+        color: white;
+    };
 </style>

@@ -6,22 +6,25 @@
         <h1>공지사항</h1>
         <div id="postlist">
 
-            <table border='1' width='100%' style='border-collapse: collapse;'>
-                <tr>
-                    <th>번호</th>
-                    <th>제목</th>
-                    <th>글쓴이</th>
-                    <th>조회</th>
-                    <th>날짜</th>
-                </tr>
-
-                <tr v-for="content in contents" v-bind:key = "content.id">
-                    <td>{{content.index }}</td>
-                    <td>{{content.title }}</td>
-                    <td>{{content.author }}</td>
-                    <td>{{content.views }}</td>
-                    <td>{{content.date }}</td>
-                </tr>
+            <table class = "table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>조회</th>
+                        <th>날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="content in contents" v-bind:key = "content.id">
+                        <td>{{content.index }}</td>
+                        <td>{{content.title }}</td>
+                        <td>{{content.author }}</td>
+                        <td>{{content.views }}</td>
+                        <td>{{content.date }}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <button><router-link to="./wirte">글쓰기</router-link></button>
